@@ -1,0 +1,21 @@
+.body{
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: silver;
+}
+.login{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+.ancho{
+    width: 100%;
+}
+.button{
+    height: 50px;
+}
+.spinner{
+    margin: 0 auto;
+}

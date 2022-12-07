@@ -1,0 +1,22 @@
+[
+    {
+        "nombre":"Inicio",
+        "redirect":"/dashboard"
+    },
+    {
+        "nombre":"Lista de Usuarios",
+        "redirect":"/dashboard/usuarios"
+    },
+    {
+        "nombre":"Registrar Horas Extras",
+        "redirect":"/dashboard/reportes"
+    },
+    {
+        "nombre":"Calcular Horas Extras",
+        "redirect":"/dashboard/calcularhora"
+    },
+    {
+        "nombre":"Acerca de",
+        "redirect":"/dashboard/acercade"
+    }
+]
