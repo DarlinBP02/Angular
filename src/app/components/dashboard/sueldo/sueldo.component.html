@@ -1,4 +1,5 @@
-<div class="container">
+<body>
+  <div class="container">
     <p>
         <mat-toolbar>
           <span>Sueldo por las Horas Extras</span>
@@ -6,3 +7,26 @@
       </p>
 
 </div>
+<table class="table table-bordered table-hover">    
+  <thead>
+  <tr>    
+    <th>Id</th>    
+    <th>Nombre</th>    
+    <th>Correo</th> 
+    <th>Valor de las horas extras</th> 
+    <th>Total de horas extras trabajadas</th> 
+    <th>Total de a pagar por las horas extras</th>         
+  </tr>    
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of xmlItems">    
+    <td>{{item.id}}</td>    
+    <td>{{item.name}}</td>    
+    <td>{{item.email}}</td>  
+    <td>{{item.total}}</td> 
+    <td>{{item.hora}}</td> 
+    <td>{{item.sueldo}}</td>  
+  </tr>    
+</tbody>
+</table> 
+</body>

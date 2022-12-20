@@ -2,32 +2,42 @@
 <Employee>    
    <emp>    
       <id>1</id>    
-      <name>Faisal</name>    
-      <gender>Male</gender>    
-      <mobile>514545</mobile>    
+      <name>Pablo Rodriguez</name>    
+      <email>pablo@gmail.com</email>    
+      <total>$1.50</total>   
+      <hora>6 Horas</hora>    
+      <sueldo>$9</sueldo> 
    </emp>    
    <emp>    
       <id>2</id>    
-      <name>Bhavdip</name>    
-      <gender>Male</gender>    
-      <mobile>5431643</mobile>    
+      <name>Ricky Flores</name>    
+      <email>ricky@gmail.com</email>    
+      <total>$1.50</total>   
+      <hora>10 Horas</hora>    
+      <sueldo>$15</sueldo> 
    </emp>    
    <emp>    
       <id>3</id>    
-      <name>Irshad</name>    
-      <gender>Male</gender>    
-      <mobile>43265436</mobile>    
+      <name>Julio Gonzalez</name>    
+      <email>julio@gmail.com</email>   
+      <total>$1.50</total>   
+      <hora>3 Horas</hora>    
+      <sueldo>$4.5</sueldo>      
    </emp>    
    <emp>    
       <id>4</id>    
-      <name>Keyur</name>    
-      <gender>Male</gender>    
-      <mobile>5435431</mobile>    
+      <name>Tatiana Vera</name>    
+      <email>tatiana@gmail.com</email>   
+      <total>$1.50</total>   
+      <hora>5 Horas</hora>    
+      <sueldo>$7.5</sueldo>  
    </emp>    
    <emp>    
       <id>5</id>    
-      <name>Tabish</name>    
-      <gender>Male</gender>    
-      <mobile>432656</mobile>    
+      <name>Mario Gomez</name>       
+      <email>mario@gmail.com</email>    
+      <total>$1.50</total>   
+      <hora>8 Horas</hora>    
+      <sueldo>$12</sueldo> 
    </emp>    
-</Employee>   
+</Employee>    

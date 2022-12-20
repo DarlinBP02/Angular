@@ -49,6 +49,9 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    background-image: url('src/assets/img/img.jpg');
+    background-size: 2500px;
+    background-position: center;
 }
 
 img {
