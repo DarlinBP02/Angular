@@ -16,6 +16,10 @@
         "redirect":"/dashboard/calcularhora"
     },
     {
+        "nombre":"Sueldo Por las Horas Extras",
+        "redirect":"/dashboard/sueldo"
+    },
+    {
         "nombre":"Acerca de",
         "redirect":"/dashboard/acercade"
     }

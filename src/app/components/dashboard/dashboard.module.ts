@@ -11,6 +11,7 @@ import { ReportesComponent } from './reportes/reportes.component';
 import { AcercadeComponent } from '../acercade/acercade.component';
 import { CrearUsuarioComponent } from './usuarios/crear-usuario/crear-usuario.component';
 import { CalcularhoraComponent } from './calcularhora/calcularhora.component';
+import { SueldoComponent } from './sueldo/sueldo.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CalcularhoraComponent } from './calcularhora/calcularhora.component';
     ReportesComponent,
     AcercadeComponent,
     CrearUsuarioComponent,
-    CalcularhoraComponent
+    CalcularhoraComponent,
+    SueldoComponent
   ],
   imports: [
     CommonModule,

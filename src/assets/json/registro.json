@@ -1,0 +1,42 @@
+[
+{
+    "Nombre":"Pablo David",
+    "Apellido":"Perez Loor",
+    "Correo":"Pablo@gmail,com",
+    "Telefono":"0945653154",
+    "horastrabajadas": "1 horas extras",
+    "facultad":"Tecnologia de la Informacion"
+},
+{
+    "Nombre":"Juan Tomas",
+    "Apellido":"Barcia Tuarez",
+    "Correo":"juan@gmail,com",
+    "Telefono":"0956321452",
+    "horastrabajadas": "2 horas extras",
+    "facultad":"Tecnologia de la Informacion"
+},
+{
+    "Nombre":"Pedro Baldo",
+    "Apellido":"Velez Zambrano",
+    "Correo":"pedro@gmail,com",
+    "Telefono":"0965321487",
+    "horastrabajadas": "3 horas extras",
+    "facultad":"Ingenieria en Sistema "
+},
+{
+    "Nombre":"Maria Virginia",
+    "Apellido":"Castro Mera",
+    "Correo":"maria@gmail,com",
+    "Telefono":"0945632156",
+    "horastrabajadas": "2:50 horas extras",
+    "facultad":"Tecnologia de la Informacion"
+},
+{
+    "Nombre":"Genesis Brigitte",
+    "Apellido":"Gomez Bolaños",
+    "Correo":"genesis@gmail,com",
+    "Telefono":"0988745623",
+    "horastrabajadas": "2 horas extras",
+    "facultad":"Ingenieria en Sistema "
+}
+  ]

@@ -3,7 +3,9 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: silver;
+    background-image: url('src/assets/img/ima.png') ;
+    background-size: 2200px;
+    background-position: center;
 }
 .login{
     width: 100%;

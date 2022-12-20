@@ -1,8 +1,45 @@
+
+<body>
   <div class="container">
     <p>
         <mat-toolbar>
           <span>Registrar Horas Extras</span>
         </mat-toolbar>
       </p>
-</div>
+<table>
+  <thead>
+<th>
+Nombre
+</th>
+<th>
+Apellido
+</th>
+<th>
+Correo
+</th>
+<th>
+Telefono
+</th>
+<th>
+  Horas extras Trabajadas
+  </th>
+<th>
+  Facultad
+  </th>
 
+  </thead>
+<tbody>
+<tr *ngFor="let registro of registro">
+<td>{{registro.Nombre}}</td>
+<td>{{registro.Apellido}}</td>
+<td>{{registro.Correo}}</td>
+<td>{{registro.Telefono}}</td>
+<td>{{registro.horastrabajadas}}</td>
+<td>{{registro.facultad}}</td>
+</tr>
+
+</tbody>
+</table>
+  
+</div>
+</body>
