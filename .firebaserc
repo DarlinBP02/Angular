@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "registro-horas-extras": {
+      "hosting": {
+        "material": [
+          "registro-horas-extras"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "registro-horas-extras"
+  }
+}

@@ -19,6 +19,8 @@
             "polyfills": [
               "zone.js"
             ],
+        
+        
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -29,6 +31,7 @@
               "src/styles.css"
             ],
             "scripts": []
+            
           },
           "configurations": {
             "production": {
@@ -46,6 +49,7 @@
               ],
               "outputHashing": "all"
             },
+            
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -57,6 +61,8 @@
           },
           "defaultConfiguration": "production"
         },
+      
+         
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
@@ -92,6 +98,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "material:build:production",
+            "firebaseProject": "registro-horas-extras",
+            "firebaseHostingSite": "registro-horas-extras"
           }
         }
       }

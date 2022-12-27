@@ -12,6 +12,10 @@ import { AcercadeComponent } from '../acercade/acercade.component';
 import { CrearUsuarioComponent } from './usuarios/crear-usuario/crear-usuario.component';
 import { CalcularhoraComponent } from './calcularhora/calcularhora.component';
 import { SueldoComponent } from './sueldo/sueldo.component';
+import { ListregistroComponent } from './listregistro/listregistro.component';
+import { CrearRegistroComponent } from './crear-registro/crear-registro.component';
+import { RegistrarHorasComponent } from './registrar-horas/registrar-horas.component';
+
 
 
 @NgModule({
@@ -24,7 +28,10 @@ import { SueldoComponent } from './sueldo/sueldo.component';
     AcercadeComponent,
     CrearUsuarioComponent,
     CalcularhoraComponent,
-    SueldoComponent
+    SueldoComponent,
+    ListregistroComponent,
+    CrearRegistroComponent,
+    RegistrarHorasComponent
   ],
   imports: [
     CommonModule,

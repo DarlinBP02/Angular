@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+        <p>
+            <mat-toolbar>
+              <span>Registrar Horas Extras</span>
+            </mat-toolbar>
+          </p>
+          <button class="btn btn-dark btn-lg float-right" routerLink="/dashboard/crear-registro">Agregar</button>
+    
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Documento</th>
+                <th>Salario</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let horas of horas">
+                    <td>{{ horas.nombre }}</td>
+                    <td>{{ horas.apellido }}</td>
+                    <td>{{ horas.documento }}</td>
+                    <td>{{ horas.salario }}</td>
+                  </tr>
+            </tbody>
+          </table>
+    </div>
+</body>

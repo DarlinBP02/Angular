@@ -9,6 +9,14 @@
     },
     {
         "nombre":"Registrar Horas Extras",
+        "redirect":"/dashboard/listregistro"
+    },
+    {
+        "nombre":"Reg Horas Extras",
+        "redirect":"/dashboard/crear-registro"
+    },
+    {
+        "nombre":"Horas Extras realizadas",
         "redirect":"/dashboard/reportes"
     },
     {

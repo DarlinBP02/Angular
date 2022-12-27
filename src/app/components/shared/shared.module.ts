@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { AngularFireModule } from '@angular/fire/compat';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -19,6 +19,13 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { ToastrModule } from 'ngx-toastr';
+
+
+
+
 
 @NgModule({
   declarations: [],
@@ -40,10 +47,15 @@ import {MatSelectModule} from '@angular/material/select';
     MatPaginatorModule,
     MatCardModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    ToastrModule.forRoot(), 
+
   ],
 
   exports:[
+    CommonModule,
     MatSlideToggleModule,
     MatFormFieldModule,
     MatInputModule,
@@ -60,7 +72,11 @@ import {MatSelectModule} from '@angular/material/select';
     MatPaginatorModule,
     MatCardModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
+    AngularFireModule,
+    AngularFirestoreModule,
+    ToastrModule
+
   ]
 })
 

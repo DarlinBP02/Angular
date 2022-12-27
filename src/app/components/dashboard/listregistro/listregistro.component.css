@@ -1,0 +1,23 @@
+body{
+    background-image: url('src/assets/img/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+table {
+    width: 100%;
+    border: 1px solid rgb(23, 118, 181);
+ }
+ th, td {
+    width: 15%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid rgb(3, 255, 78);
+    border-collapse: collapse;
+    padding: 15px;
+    caption-side: bottom;
+ }
+th{
+    color: rgb(8, 8, 8);
+    font-size: 17px;
+    background: rgb(94, 218, 255);
+}
