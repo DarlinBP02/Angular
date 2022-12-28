@@ -21,7 +21,7 @@ export class CrearRegistroComponent implements OnInit {
       nombre: ['', Validators.required],
       apellido: ['', Validators.required],
       documento: ['', Validators.required],
-      salario: ['', Validators.required]
+      horaextra: ['', Validators.required]
     })
 }  
 
@@ -38,14 +38,14 @@ ngOnInit(): void {
       nombre: this.crearregistro.value.nombre,
       apellido: this.crearregistro.value.apellido,
       documento: this.crearregistro.value.documento,
-      salario: this.crearregistro.value.salario,
+      horaextra: this.crearregistro.value.horaextra,
       fechaCreacion: new Date(),
       fechaActualizacion: new Date()
     }
     this.loading = true;
     this._registro.agregarregistro(horasextras).then(() => {
       this.toastr.success('La hora extra fue registrado con exito!', 'Hora Extra Registrads',{
-        positionClass: 'toast-bottom-right'
+        positionClass: 'toast-bottom-center'
       });
       this.loading = false;
         this.router.navigate(['dashboard/listregistro']);

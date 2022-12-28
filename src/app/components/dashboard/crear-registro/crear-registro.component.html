@@ -2,18 +2,18 @@
     <div class="container">
         <p>
             <mat-toolbar>
-              <span>Registrarss Horas Extras</span>
+              <span>Registrar Horas Extras</span>
             </mat-toolbar>
           </p>
           <div class="col-lg-6 offset-lg-3">
             <div class="card text-center">
                 <div class="card-body">
-                    <h3>Crear
-                        <div *ngIf="loading" class="spinner-border float-right" role="status">
+                    <h3> <b> Registrar Hora Extra</b>
+                        <div *ngIf="loading" class="spinner-border float-center" role="status">
                             <span class="sr-only">Loading...</span>
                           </div>
                     </h3>
-                    <span *ngIf="submitted && crearregistro.invalid" class="badge badge-danger">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+                    <span *ngIf="submitted && crearregistro.invalid" class="alerta"> <strong>TODOS LOS CAMPOS SON OBLIGATORIOS</strong> </span>
                     <form  class="mt-4" [formGroup]="crearregistro" (ngSubmit)="agregarregistro()" >
                         <div class="row">
                             <div class="col">
@@ -25,14 +25,14 @@
                                 placeholder="Apellido">
                         </div>
                     </div>
-                    <input type="text" class="form-control form-control-lg mt-3" formControlName="documento"
-                        placeholder="Documento">
-                    <input type="number" class="form-control form-control-lg mt-3" formControlName="salario"
-                        placeholder="Salario">
+                    <input type="number" class="form-control form-control-lg mt-3" formControlName="documento"
+                        placeholder="Cedula">
+                    <input type="number" class="form-control form-control-lg mt-3" formControlName="horaextra"
+                        placeholder="horaextra">
                             <div class="mt-3">
-                                <button type="text" class="btn btn-secondary btn-lg mr-3"
-                                routerLink="/dashboard/listregistro">Volver</button>
-                                <button type="submit" class="btn btn-dark btn-lg">Agregar</button>
+                                <button type="text" class="boton1"
+                                routerLink="/dashboard/listregistro"> <b>Volver</b> </button>
+                                <button type="submit" class="boton2"> <b>Agregar</b> </button>
                             </div>
                     </form>
                 </div>

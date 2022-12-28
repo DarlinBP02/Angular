@@ -2,18 +2,21 @@
     <div class="container">
         <p>
             <mat-toolbar>
-              <span>Registrar Horas Extras</span>
+              <span>Lista de Horas Extras</span>
             </mat-toolbar>
           </p>
-          <button class="btn btn-dark btn-lg float-right" routerLink="/dashboard/crear-registro">Agregar</button>
-    
+          <button mat-fab extended color="primary" routerLink="/dashboard/crear-registro"><mat-icon>add</mat-icon>
+            Registrar Hora Extra
+            </button> 
+    <br>
+    <hr>
           <table class="table table-striped mt-5">
             <thead>
               <tr>
                 <th>Nombre</th>
                 <th>Apellido</th>
-                <th>Documento</th>
-                <th>Salario</th>
+                <th>Cedula</th>
+                <th>Hora Extras realizadas</th>
               </tr>
             </thead>
             <tbody>
@@ -21,7 +24,7 @@
                     <td>{{ horas.nombre }}</td>
                     <td>{{ horas.apellido }}</td>
                     <td>{{ horas.documento }}</td>
-                    <td>{{ horas.salario }}</td>
+                    <td>{{ horas.horaextra }}</td>
                   </tr>
             </tbody>
           </table>

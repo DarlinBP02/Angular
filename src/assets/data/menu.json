@@ -8,11 +8,11 @@
         "redirect":"/dashboard/usuarios"
     },
     {
-        "nombre":"Registrar Horas Extras",
+        "nombre":"Lista de Horas Extras",
         "redirect":"/dashboard/listregistro"
     },
     {
-        "nombre":"Reg Horas Extras",
+        "nombre":"Registrar Horas Extras",
         "redirect":"/dashboard/crear-registro"
     },
     {
