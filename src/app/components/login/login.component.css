@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     background-image: url('src/assets/img/ima.png') ;
+    background-repeat: no-repeat;
     background-size: 2200px;
     background-position: center;
 }

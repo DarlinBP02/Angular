@@ -12,22 +12,19 @@
         <form>
           <div class="div">
             <label for="horas"><h1> <b>Horas</b> </h1></label>
-            <input  type="text" name="horas" id="horas" class="entrada"  autocomplete="off"/>
+            <input  type="text"  name="horas" id="horas" class="entrada"  autocomplete="off"/>
           </div>
           <hr />
           <div class="div">
             <label for="dias"> <h1><b>Dias</b></h1> </label>
             <input  type="text" name="dias" id="dias" class="entrada" autocomplete="off" />
           </div>
-          <button id="btn">Calcular</button>
+          <button type="submit" id="btn" (click)="calcula()">Calcular</button>
     <hr>
-          
         </form>
-        
-      </main>
-
-        
       
+          
+      </main>   
 
 </body>
 
