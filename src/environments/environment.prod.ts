@@ -7,5 +7,7 @@ export const environment = {
     storageBucket: "registro-horas-extras.appspot.com",
     messagingSenderId: "861375463110",
     appId: "1:861375463110:web:26d218cf76872b4f69e1c7"
+    
   }
 };
+
