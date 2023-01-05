@@ -1,49 +1,41 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-registrarse',
   templateUrl: './registrarse.component.html',
   styleUrls: ['./registrarse.component.css']
 })
-export class RegistrarseComponent {
-  form:FormGroup
+export class RegistrarseComponent implements OnInit {
   loading=false;
-  constructor(private fb: FormBuilder,private _snackBar: MatSnackBar,private router:Router){
-    this.form=this.fb.group({
-      usuario:['', Validators.required],
-      correo:['', Validators.required],
-      password:['', Validators.required]
+  formReg: FormGroup;
+
+  constructor(
+    private userService: UserService,
+    private router: Router
+  ) {
+    this.formReg = new FormGroup({
+      email: new FormControl(),
+      password: new FormControl()
     })
   }
-  ingresar(){
-    console.log(this.form);
-    const usuario=this.form.value.usuario;
-    const password=this.form.value.password;
-  
-   if(usuario=='admin' && password=='admin123'){
-  this.fakeloading();
-   }else{
-  this.error();
-  this.form.reset();
-   }
+
+  ngOnInit(): void {
   }
-  error(){
-  
-    this._snackBar.open('Usuario o Contraseña son invalidos', '', {
-      duration:5000,
-      horizontalPosition:'center',
-      verticalPosition:'bottom'
-    })
+
+  onSubmit() {
+    this.userService.register(this.formReg.value)
+      .then(response => {
+        console.log(response);
+        setTimeout(() => {
+
+        this.router.navigate(['/login']);
+      }, 1500);
+
+      })
+      .catch(error => console.log(error));
   }
-  fakeloading(){
-    this.loading=true;
-  
-    setTimeout(() => {
-      this.router.navigate(['login'])
-    }, 1500);
-  }
-  }
-  
+
+}

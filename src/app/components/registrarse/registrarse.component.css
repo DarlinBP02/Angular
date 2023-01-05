@@ -5,8 +5,9 @@
     align-items: center;
     background-image: url('src/assets/img/ima.png') ;
     background-repeat: no-repeat;
-    background-size: 2200px;
     background-position: center;
+    background-size: cover;
+
 }
 .login{
     width: 100%;
@@ -22,3 +23,72 @@
 .spinner{
     margin: 0 auto;
 }
+.inicio {
+    width: 350px;
+    height: 600px;
+    background: rgba(59, 151, 131, 0.278);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+  }
+  .inicio label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .inicio input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .inicio input[type="text"], .inicio input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .inicio input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f23b8;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .inicio input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff0707;
+    color: #000;
+  }
+  .button{
+    border-radius: 50px;
+    background-color: #ffc10788;
+  }
+  .inicio button[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  .inicio a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(2, 37, 44);
+  }
+  
+  .inicio a:hover {
+    color: #fff;
+  }

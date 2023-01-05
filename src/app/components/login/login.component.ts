@@ -1,47 +1,56 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
-form:FormGroup
-loading=false;
-constructor(private fb: FormBuilder,private _snackBar: MatSnackBar,private router:Router){
-  this.form=this.fb.group({
-    usuario:['', Validators.required],
-    password:['', Validators.required]
-  })
-}
-ingresar(){
-  console.log(this.form);
-  const usuario=this.form.value.usuario;
-  const password=this.form.value.password;
+export class LoginComponent implements OnInit {
 
- if(usuario=='admin' && password=='admin123'){
-this.fakeloading();
- }else{
-this.error();
-this.form.reset();
- }
-}
-error(){
+  formLogin: FormGroup;
+  loading=false;
 
-  this._snackBar.open('Usuario o Contraseña son invalidos', '', {
-    duration:5000,
-    horizontalPosition:'center',
-    verticalPosition:'bottom'
-  })
-}
-fakeloading(){
-  this.loading=true;
+  constructor(
+    private userService: UserService,
+    private router: Router
+  ) {
+    this.formLogin = new FormGroup({
+      email: new FormControl(),
+      password: new FormControl()
+    })
+  }
 
-  setTimeout(() => {
-    this.router.navigate(['dashboard'])
-  }, 1500);
+  ngOnInit(): void {
+  }
+
+  onSubmit() {
+    this.loading=true;
+    this.userService.login(this.formLogin.value)
+      .then(response => {
+        console.log(response);
+        setTimeout(() => {
+        this.router.navigate(['dashboard']);
+      }, 1500);
+
+      })
+      .catch(error => console.log(error));
+  }
+
+  onClick() {
+    this.loading=true;
+    this.userService.loginWithGoogle()
+      .then(response => {
+        console.log(response);
+        setTimeout(() => {
+        this.router.navigate(['dashboard']);
+      }, 1500);
+      })
+      .catch(error => console.log(error))
+  }
+
 }
-}
+
+

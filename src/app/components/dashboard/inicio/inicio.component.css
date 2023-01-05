@@ -1,8 +1,17 @@
-body{
-    background-image: url('src/assets/img/img.jpg');
-    background-size: 2500px;
-    background-position: center;
-}
+
 .container{
     text-align: center;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    background-image: linear-gradient(180deg, #21bddc8c 0%, #0000008c 100%), url('src/assets/img/img.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
 }
